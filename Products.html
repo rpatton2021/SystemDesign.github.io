@@ -1,1 +1,151 @@
-<h1>Hello!</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry and Harriet's Hang Gliding Haven - Products</title>
+    <style>
+        body {
+            background-color: lightblue;
+            color: darkblue;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+        }
+        header {
+            background-color: navy;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        main {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        section {
+            flex: 70%;
+        }
+        aside {
+            flex: 25%;
+            background-color: yellow; /* Changed background color to yellow */
+            color: darkblue;
+            padding: 20px;
+        }
+        .product {
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: navy;
+            color: white;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        h1, h2 {
+            font-family: "Times New Roman", Times, serif;
+        }
+        .date {
+            font-style: italic;
+        }
+        .advertisement {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .advertisement a {
+            color: darkblue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .email {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .email a {
+            color: darkblue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Welcome to <em>Harry and Harriet's Hang Gliding Haven</em></h1>
+        <p class="date" id="date"></p> <!-- Date will be displayed here -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2 style="font-family: Arial, sans-serif;">Our Products</h2>
+            <ol>
+                <li>
+                    <div class="product">
+                        <img src="hang-gliding-product1.jpg" alt="Hang Gliding Product 1">
+                        <h3><u>Hang Gliding Kit</u></h3>
+                        <p>Description of the hang gliding kit.</p>
+                        <h4>What's Included:</h4>
+                        <ul>
+                            <li>Hang glider</li>
+                            <li>Harness</li>
+                            <li>Helmet</li>
+                            <li>Instruction manual</li>
+                            <!-- Add more items as needed -->
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="product">
+                        <img src="hang-gliding-product2.jpg" alt="Hang Gliding Product 2">
+                        <h3><u>Hang Gliding Gear</u></h3>
+                        <p>Description of the hang gliding gear.</p>
+                    </div>
+                </li>
+                <!-- Add more products as needed -->
+            </ol>
+        </section>
+
+        <aside>
+            <h2>Download Our Brochure</h2>
+            <p>Click the link below to download our brochure:</p>
+            <a href="brochure.pdf" download>Download Brochure</a>
+            <div class="advertisement">
+                <p>Watch our latest hang gliding adventure video:</p>
+                <a href="https://www.youtube.com/watch?v=dLplIUgy5hA&ab_channel=WorldSport" target="_blank">Watch Now</a>
+            </div>
+            <div class="email">
+                <p>Email us if you have any questions: <a href="mailto:hanggliding@hanggliding.com">hanggliding@hanggliding.com</a></p>
+            </div>
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Harry and Harriet's Hang Gliding Haven. All rights reserved.</p>
+    </footer>
+
+    <script>
+        // JavaScript code to update the date
+        const dateElement = document.getElementById('date');
+        const currentDate = new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+        dateElement.textContent = 'Today is ' + currentDate;
+    </script>
+</body>
+</html>
