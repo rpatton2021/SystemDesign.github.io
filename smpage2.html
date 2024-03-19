@@ -24,7 +24,7 @@
       font-size: 30px; /* Set smaller font size for h2 and h3 */
     }
     a {
-      color: #007bff;
+      color: darkred;
       text-decoration: none;
     }
     a:hover {
@@ -48,9 +48,13 @@
       display: block; /* Make the image a block element */
       margin: 0 auto; /* Center the image horizontally */
     }
-    .position {
-      text-align: center; /* Center-align the position text */
-    }
+    .important {
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline;
+            color: blue;
+            text-align: center; /* Different font color */
+        }
   </style>
 </head>
 <body>
@@ -65,7 +69,7 @@
         <article>
             <h3 style="font-size: 25px;">Bill Gates</h3>
   <img class="profile-img" src="bill.jpg" alt="Bill Gates" width="200">
-  <p class="position" style="text-align: center; color: red;">Founder & CEO</p>
+  <p class="important">Founder & CEO</p>
           <p class="indent contact-link"><a href="mailto:bill@example.com">Contact Bill</a></p>
           <p class="indent"><em>Bio:</em> Bill Gates is an American business magnate, software developer, philanthropist, and author. He co-founded Microsoft Corporation, which became the world's largest personal-computer software company. Gates led the company as chairman and CEO until stepping down as CEO in January 2000 but remained chairman and became chief software architect. He is one of the best-known entrepreneurs and pioneers of the microcomputer revolution of the 1970s and 1980s. Later, Gates pursued philanthropy, donating large amounts of money to various charitable organizations and scientific research programs through the Bill & Melinda Gates Foundation, established in 2000.</p>
           <p class="indent"><a href="https://en.wikipedia.org/wiki/Bill_Gates" target="_blank">Learn more about our CEO</a></p>
@@ -78,7 +82,7 @@
         <article>
           <h3 style="font-size: 25px;">Tim Cook</h3>
   <img class="profile-img" src="tim.jpg" alt="Tim Cook" width="200">
-  <p class="position" style="text-align: center; color: red;">Co-Founder & CFO</p>
+  <p class="important">Co-Founder & CFO</p>
           <p class="indent contact-link"><a href="mailto:tim@example.com">Contact Tim</a></p>
           <p class="indent"><em>Bio:</em> Timothy Donald Cook is an American business executive, currently serving as the CEO of Apple Inc. He joined Apple in March 1998 as a Senior Vice President for worldwide operations, and later became the Executive Vice President for worldwide sales and operations. Cook was named the Chief Executive Officer of Apple Inc. in August 2011, succeeding Steve Jobs. Under his leadership, Apple has introduced a range of new products, including the iPhone, iPad, Apple Watch, and AirPods, and has expanded its services business. Cook has also been an advocate for privacy and environmental sustainability.</p>
           <p class="indent"><a href="https://en.wikipedia.org/wiki/Tim_Cook" target="_blank">Learn more about our CFO</a></p>
@@ -91,23 +95,22 @@
         <article>
           <h3 style="font-size: 25px;">Drake</h3>
   <img class="profile-img" src="drake.jpg" alt="Drake" width="200">
-  <p class="position" style="text-align: center; color: red;">President</p>
+  <p class="important">President</p>
           <p class="indent contact-link"><a href="mailto:drake@example.com">Contact Drake</a></p>
           <p class="indent"><em>Bio:</em> Aubrey Drake Graham, known professionally as Drake, is a Canadian rapper, singer, songwriter, actor, producer, and entrepreneur. He first gained recognition for his role as Jimmy Brooks on the television series "Degrassi: The Next Generation." Drake's music career began in 2006 with the release of his debut mixtape "Room for Improvement." He achieved significant commercial success with his third mixtape, "So Far Gone," and has since released several successful albums and singles. Drake is known for his distinctive blend of hip-hop, R&B, and pop music styles, as well as his introspective lyrics and catchy hooks. He has won numerous awards, including four Grammy Awards, and holds several Billboard chart records.</p>
 
           <p class="indent"><a href="https://en.wikipedia.org/wiki/Drake_(musician)" target="_blank">Learn more about our President</a></p>
-          <ul class="indent">
+          <ol class="indent">
             <li>Operational Oversight</li>
             <li>Marketing Strategy</li>
             <li>Product Development</li>
-          </ul>
+          </ol>
         </article>
       </div>
     </section>
   </main>
   <footer>
-  <<footer>
-  <p>&copy; 2024 Harry and Harriet’s Hang-gliding Haven. Last updated <span id="lastModified"></span></p>
+  <footer>
   <p>Contact Me: <a href="mailto:mehta232@purdue.edu">mehta232@purdue.edu</a></p>
   <p><a href="Meet our Team PDF.pdf" download>Download Meet Our Team PDF</a></p>
 </footer>
@@ -116,8 +119,7 @@
 
   </footer>
   <script>
-    // JavaScript to display last modified date
-    document.getElementById('lastModified').textContent = document.lastModified;
-  </script>
+    document.write("<p>Last modified on: "+ document.lastModified + "</p>");
+</script>
 </body>
 </html>

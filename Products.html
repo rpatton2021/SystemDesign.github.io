@@ -1,4 +1,4 @@
-r<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -6,95 +6,59 @@ r<!DOCTYPE html>
     <title>Harry and Harriet's Hang Gliding Haven - Products</title>
     <style>
         body {
-            background-color: lightskyblue;
-            color: darkblue;
-            margin: 0;
-            padding: 0;
-            font-family: Brush Script MT;
+            font-family: Arial, sans-serif; /* Default font style */
+            color: black; /* Default font color */
         }
-        header {
-            background-color: lightskyblue;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-        }
-        nav ul li {
-            display: inline;
-            margin-right: 20px;
-        }
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-        }
-        main {
-            padding: 20px;
-            display: flex;
-            justify-content: space-between;
-        }
-        section {
-            flex: 70%;
-        }
-        aside {
-            flex: 25%;
-            background-color: lightskyblue; 
-            color: darkblue;
-            padding: 20px;
-        }
-        .product {
-            margin-bottom: 20px;
-        }
-        footer {
-            background-color: lightskyblue;
-            color: white;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        h1, h2 {
-            font-family: "Times New Roman", Times, serif;
-        }
-        .date {
+	.fancy-title {
+            font-family: 'Brush Script MT', cursive; /* Fancier font for the title */
+            font-size: 100px; 
+            color: black; 
+	}
+	.fancy-header {
+            font-family: 'Brush Script MT', cursive; 
+            font-size: 40px; 
+            color: black; 
+	}
+        .important {
+            font-weight: bold;
             font-style: italic;
+            text-decoration: underline;
+            color: blue; /* Different font color */
         }
-        .advertisement {
-            text-align: center;
-            margin-top: 20px;
+        .secondary-info {
+            font-size: 14px; /* Smaller font size */
+            font-family: 'Times New Roman', serif; /* Different font style */
+            color: green; /* Different font color */
         }
-        .advertisement a {
-            color: darkblue;
+        a {
             text-decoration: none;
-            font-weight: bold;
+            color: darkred;
         }
-        .email {
-            text-align: center;
-            margin-top: 20px;
+        a:hover {
+            text-decoration: underline;
         }
-        .email a {
-            color: darkblue;
-            text-decoration: none;
-            font-weight: bold;
+        .contact-link {
+            font-size: 16px;
         }
     </style>
 </head>
-<body>
+<body style = "background-color: lightskyblue;">
     <header>
-        <h1>Welcome to <em>Harry and Harriet's Hang Gliding Haven</em></h1>
-        <p class="date" id="date"></p> 
+        <center>
+        <h1 class ="fancy-header">Welcome to <em>Harry and Harriet's Hang Gliding Haven</em></h1>
         <img src="Gear.jpeg" alt="Hang Gliding Product 1">
+        </center>
     </header>
-
     <main>
         <section>
-            <h2 style="font-family: Arial, sans-serif;">Our Products</h2>
+            <h2 class="fancy-header">Our Products</h2>
             <ol>
                 <li>
-                    <div class="product">
-                        <h3><u>Hang Gliding Kit</u></h3>
-                        <p>Description of the hang gliding kit.</p>
+                    <div class="body">
+                        <h3 class="important"><u>Hang Gliding Kit</u></h3>
+                        <p>Our hang-gliding kit comes with the safest and newest of gear (listed under our gear section). We have two options: one with a professional or the solo version. Our
+                            kit is for an hour of flying time with a 30 minute lesson on how to operate the gear.
+                        </p>
                         <h4>What's Included:</h4>
                         <ul>
                             <li>Hang glider</li>
@@ -105,9 +69,11 @@ r<!DOCTYPE html>
                     </div>
                 </li>
                 <li>
-                    <div class="product">
-                        <h3><u>Hang Gliding Gear</u></h3>
-                        <p>Description of the hang gliding gear.</p>
+                    <div class="body">
+                        <h3 class="important"><u>Hang Gliding Gear</u></h3>
+                        <p>Our hang-gliding gear is the safest and newest technology. We make sure our gear follows the safety measures described under the safe sports 
+                            PDF and make sure the quality is up to standards. We test out our equipment once a month to give the safest experience for our customers.
+                        </p>
                         <h4>What's Included:</h4>
                         <ul>
                             <li>Hang gliding suit</li>
@@ -118,9 +84,11 @@ r<!DOCTYPE html>
                     </div>
                 </li>
                 <li>
-                    <div class="product">
-                        <h3><u>Junior Hang Gliding Kit</u></h3>
-                        <p>Description of the junior hang gliding kit.</p>
+                    <div class="body">
+                        <h3 class="important"><u>Junior Hang Gliding Kit</u></h3>
+                        <p>This is our kit for those who are newer to hang-gliding or skydiving. This lasts about an hour (similar to our main hang-gliding package). 
+                            We make sure to take extra precautions and require a professional to fly with those who use this kit.
+                        </p>
                         <h4>What's Included:</h4>
                         <ul>
                             <li>Mini hang glider</li>
@@ -132,13 +100,14 @@ r<!DOCTYPE html>
                 </li>
             </ol>
         </section>
-
+<br>
+<br>
         <aside>
-            <h2>Download Our Products List</h2>
-            <p>Click the link below to download our brochure:</p>
-            <a href="Harry and Harriet's Hang Gliding Haven.pdf" download>Download Product List</a>
+            <h2 class="fancy-header">Download Our Products List</h2>
+            <p class="important">Click the link below to download our brochure:</p>
+            <a href="Harry and Harriet's Hang Gliding Haven.pdf" target="_blank">Download Product List</a>
             <div class="advertisement">
-                <p>Watch our latest hang gliding adventure video:</p>
+                <p class="important">Watch our latest hang gliding adventure video:</p>
                 <a href="https://www.youtube.com/watch?v=dLplIUgy5hA&ab_channel=WorldSport" target="_blank">Red Bull Hang Gliding Adventure! Click to Watch Now! </a>
             </div>
             <div class="email">
@@ -146,16 +115,8 @@ r<!DOCTYPE html>
             </div>
         </aside>
     </main>
-
-    <footer>
-        <p>&copy; 2024 Harry and Harriet's Hang Gliding Haven. All rights reserved.</p>
-    </footer>
-
     <script>
-        // JavaScript code to update the date
-        const dateElement = document.getElementById('date');
-        const currentDate = new Date().toLocaleDateString('en-US', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
-        dateElement.textContent = 'Today is ' + currentDate;
+        document.write("<p>Last modified on: "+ document.lastModified + "</p>");
     </script>
 </body>
 </html>
